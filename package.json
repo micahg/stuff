@@ -1,0 +1,20 @@
+{
+  "name": "stuff",
+  "version": "0.0.1",
+  "description": "Does Stuff",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "mongoose": "latest",
+    "multer": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Micah Galizia <micahgalizia@gmail.com>",
+  "license": "ISC"
+}
