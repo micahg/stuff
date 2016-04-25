@@ -23,14 +23,10 @@ exports.render = function(req, res, next) {
   data.subtitle = 'Some stuff'
 
   Company.find({}, function(err, companies) {
-    if (err) {
-      res.renter('companies', data);
-    }
-    else {
-      data.companies = companies;
-      data.stuff = 'hello';
-      res.render('companies', data);
-    }
+    if (err)
+      res.send(err)
+    else
+      res.json(companies)
   });
 };
 
