@@ -1,0 +1,20 @@
+<html ng-app='stuffCompanies'>
+   <head>
+      <title>Stuff</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+      <script src="stuff.js"></script>
+   </head>
+   <body>
+      <h1>Stuff</h1>
+      <div>Welcome to stuff.</div>
+
+      <h2>Company List</h2>
+      <div ng-controller="CompanyController">
+        <ul>
+          <li ng-repeat="company in companies">{{company.name}} ({{company._id}})</li>
+        </ul>
+      </div>
+   </body>
+</html>
